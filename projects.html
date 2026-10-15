@@ -21,7 +21,7 @@
       </div>
       <div>
         <div class="font-bold text-[#7a0a0a]">University of Peradeniya</div>
-        <div class="text-[11px] text-gray-500">Global Alumni Connect</div>
+        <div class="text- text-gray-500">Global Alumni Connect</div>
       </div>
     </div>
     <nav class="flex gap-6 text-sm font-medium items-center">
@@ -36,55 +36,167 @@
   </div>
 </header>
 
+<!-- PROJECTS BY FACULTY - NEW SECTION ONLY -->
 <section class="max-w-7xl mx-auto px-6 py-12">
-  <h1 class="text-3xl font-bold text-[#7a0a0a]">Projects</h1>
-  
-  <h2 class="text-xl font-bold mt-10 mb-4 flex items-center gap-2"><span class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></span> Ongoing Projects</h2>
-  <div class="grid md:grid-cols-2 gap-6">
-    <div class="bg-white p-6 rounded-2xl border-l-4 border-green-500 shadow-sm">
-      <div class="flex justify-between"><h3 class="font-bold">Alumni-Funded Scholarship Program 2026</h3><span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">ONGOING</span></div>
-      <p class="text-sm text-gray-600 mt-2">50 scholarships for needy students</p>
-      <div class="mt-4"><div class="flex justify-between text-xs"><span>Progress</span><span>70% funded</span></div><div class="w-full bg-gray-200 rounded-full h-2 mt-1"><div class="bg-green-500 h-2 rounded-full" style="width:70%"></div></div></div>
-      <button class="mt-4 px-4 py-2 bg-[#7a0a0a] text-white rounded-full text-xs">Donate</button>
-    </div>
-    <div class="bg-white p-6 rounded-2xl border-l-4 border-blue-500 shadow-sm">
-      <div class="flex justify-between"><h3 class="font-bold">Research Lab Upgrade - Engineering</h3><span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">ONGOING</span></div>
-      <p class="text-sm text-gray-600 mt-2">New computers, 3D printers for workshop</p>
-      <div class="mt-4"><div class="w-full bg-gray-200 rounded-full h-2"><div class="bg-blue-500 h-2 rounded-full" style="width:45%"></div></div></div>
-    </div>
-    <div class="bg-white p-6 rounded-2xl border-l-4 border-purple-500 shadow-sm">
-      <div class="flex justify-between"><h3 class="font-bold">Library Digitalization Project</h3><span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full">ONGOING</span></div>
-      <p class="text-sm text-gray-600 mt-2">Digitizing old books and thesis</p>
-    </div>
-    <div class="bg-white p-6 rounded-2xl border-l-4 border-orange-500 shadow-sm">
-      <div class="flex justify-between"><h3 class="font-bold">Wala Restoration Project</h3><span class="text-xs bg-orange-100 text-orange-700 px-2 py-1 rounded-full">ONGOING</span></div>
-      <p class="text-sm text-gray-600 mt-2">Restoring historic Wala area</p>
-    </div>
+  <div class="text-center mb-8">
+    <h1 class="text-3xl font-bold text-[#7a0a0a]">Projects by Faculty</h1>
+    <p class="mt-2 text-sm text-gray-600">Select your faculty to view alumni-funded projects and scholarships. Central projects are for whole university.</p>
   </div>
 
-  <h2 class="text-xl font-bold mt-12 mb-4 flex items-center gap-2"><span class="w-3 h-3 bg-gray-400 rounded-full"></span> Completed Projects</h2>
-  <div class="grid md:grid-cols-3 gap-6">
-    <div class="bg-white p-6 rounded-2xl border shadow-sm">
-      <div class="flex justify-between"><h3 class="font-bold text-sm">COVID-19 Student Relief Fund</h3><span class="text-xs bg-gray-100 px-2 py-1 rounded-full">COMPLETED</span></div>
-      <p class="text-xs text-gray-600 mt-2">Distributed food packs and laptops to 200 students</p>
-      <div class="mt-3 text-xs text-green-700 font-bold">✓ Completed</div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Engineering -->
+    <div onclick="openProject('Faculty of Engineering')" class="cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm border hover:shadow-xl hover:-translate-y-1 transition-all group">
+      <img src="images/faculties/engineering.jpg" onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500'" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500" alt="Engineering">
+      <div class="p-4">
+        <h3 class="font-bold text-[#7a0a0a]">Faculty of Engineering</h3>
+        <p class="text-xs text-gray-500 mt-1">Click to view projects</p>
+      </div>
     </div>
-    <div class="bg-white p-6 rounded-2xl border shadow-sm">
-      <div class="flex justify-between"><h3 class="font-bold text-sm">Engineering Workshop Equipment 2023</h3><span class="text-xs bg-gray-100 px-2 py-1 rounded-full">COMPLETED</span></div>
-      <p class="text-xs text-gray-600 mt-2">Donated CNC machine and welding equipment</p>
-      <div class="mt-3 text-xs text-green-700 font-bold">✓ Completed</div>
+
+    <!-- Arts -->
+    <div onclick="openProject('Faculty of Arts')" class="cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm border hover:shadow-xl hover:-translate-y-1 transition-all group">
+      <img src="images/faculties/arts.jpg" onerror="this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=500'" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500" alt="Arts">
+      <div class="p-4">
+        <h3 class="font-bold text-[#7a0a0a]">Faculty of Arts</h3>
+        <p class="text-xs text-gray-500 mt-1">Wala Theater, Aaradana, Drama projects</p>
+      </div>
     </div>
-    <div class="bg-white p-6 rounded-2xl border shadow-sm">
-      <div class="flex justify-between"><h3 class="font-bold text-sm">Medical Faculty Scholarship 2024</h3><span class="text-xs bg-gray-100 px-2 py-1 rounded-full">COMPLETED</span></div>
-      <p class="text-xs text-gray-600 mt-2">30 medical students received support</p>
-      <div class="mt-3 text-xs text-green-700 font-bold">✓ Completed</div>
+
+    <!-- Science -->
+    <div onclick="openProject('Faculty of Science')" class="cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm border hover:shadow-xl transition-all group">
+      <img src="images/faculties/science.jpg" onerror="this.src='https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=500'" class="w-full h-48 object-cover" alt="Science">
+      <div class="p-4">
+        <h3 class="font-bold text-[#7a0a0a]">Faculty of Science</h3>
+        <p class="text-xs text-gray-500 mt-1">Click to view projects</p>
+      </div>
     </div>
+
+    <!-- Medicine -->
+    <div onclick="openProject('Faculty of Medicine')" class="cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm border hover:shadow-xl transition-all group">
+      <img src="images/faculties/medicine.jpg" onerror="this.src='https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500'" class="w-full h-48 object-cover" alt="Medicine">
+      <div class="p-4">
+        <h3 class="font-bold text-[#7a0a0a]">Faculty of Medicine</h3>
+        <p class="text-xs text-gray-500 mt-1">Scholarships & research support</p>
+      </div>
+    </div>
+
+    <!-- Agriculture -->
+    <div onclick="openProject('Faculty of Agriculture')" class="cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm border hover:shadow-xl transition-all group">
+      <img src="images/faculties/agriculture.jpg" onerror="this.src='https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=500'" class="w-full h-48 object-cover" alt="Agriculture">
+      <div class="p-4">
+        <h3 class="font-bold text-[#7a0a0a]">Faculty of Agriculture</h3>
+        <p class="text-xs text-gray-500 mt-1">Farm & scholarship projects</p>
+      </div>
+    </div>
+
+    <!-- Management -->
+    <div onclick="openProject('Faculty of Management')" class="cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm border hover:shadow-xl transition-all group">
+      <img src="images/faculties/management.jpg" onerror="this.src='https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500'" class="w-full h-48 object-cover" alt="Management">
+      <div class="p-4">
+        <h3 class="font-bold text-[#7a0a0a]">Faculty of Management</h3>
+        <p class="text-xs text-gray-500 mt-1">Entrepreneurship projects</p>
+      </div>
+    </div>
+
+    <!-- Veterinary -->
+    <div onclick="openProject('Faculty of Veterinary Medicine & Animal Science')" class="cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm border hover:shadow-xl transition-all group">
+      <img src="images/faculties/veterinary.jpg" onerror="this.src='https://images.unsplash.com/photo-1603126857590-46e0ea4c1c5f?w=500'" class="w-full h-48 object-cover" alt="Veterinary">
+      <div class="p-4">
+        <h3 class="font-bold text-[#7a0a0a] text-">Faculty of Veterinary Medicine & Animal Science</h3>
+        <p class="text-xs text-gray-500 mt-1">Animal hospital projects</p>
+      </div>
+    </div>
+
+    <!-- Dental -->
+    <div onclick="openProject('Faculty of Dental Sciences')" class="cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm border hover:shadow-xl transition-all group">
+      <img src="images/faculties/dental.jpg" onerror="this.src='https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=500'" class="w-full h-48 object-cover" alt="Dental">
+      <div class="p-4">
+        <h3 class="font-bold text-[#7a0a0a]">Faculty of Dental Sciences</h3>
+        <p class="text-xs text-gray-500 mt-1">Dental clinic projects</p>
+      </div>
+    </div>
+
+    <!-- Allied Health -->
+    <div onclick="openProject('Faculty of Allied Health Sciences')" class="cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm border hover:shadow-xl transition-all group">
+      <img src="images/faculties/allied-health.jpg" onerror="this.src='https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=500'" class="w-full h-48 object-cover" alt="Allied Health">
+      <div class="p-4">
+        <h3 class="font-bold text-[#7a0a0a]">Faculty of Allied Health Sciences</h3>
+        <p class="text-xs text-gray-500 mt-1">Physio & lab projects</p>
+      </div>
+    </div>
+
+    <!-- CENTRAL LINE - 10th Card - Suitable Name -->
+    <div onclick="openProject('University Central Projects')" class="cursor-pointer bg-[#7a0a0a] rounded-2xl overflow-hidden shadow-lg border-2 border-[#7a0a0a] hover:shadow-2xl hover:-translate-y-1 transition-all group relative">
+      <div class="absolute top-3 right-3 bg-[#d4af37] text-[#4a0404] text- font-bold px-2.5 py-1 rounded-full">WHOLE UNIVERSITY</div>
+      <div class="h-48 bg-gradient-to-br from-[#7a0a0a] to-[#2a0404] flex flex-col items-center justify-center text-white p-4">
+        <div class="w-20 h-20 bg-white/15 rounded-full flex items-center justify-center text-3xl">🏛️</div>
+        <div class="mt-3 font-bold text-lg text-center">Central Facilities</div>
+        <div class="text- text-white/70 text-center">Library | Hostels | Senate</div>
+      </div>
+      <div class="p-4 bg-[#7a0a0a] text-white">
+        <h3 class="font-bold">Central Line - Whole University Projects</h3>
+        <p class="text-xs text-white/70 mt-1">Library, Mahapola, Hostels, Gymkhana, Wala, Infrastructure - For All Faculties</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<footer class="bg-[#1a1a1a] text-white/60 py-8 px-6 text-sm mt-16">
-  <div class="max-w-7xl mx-auto">University of Peradeniya - Peradeniya 20400 - AAUP - Reg No: AAUP-YYYY-FAC-XXXX</div>
+<!-- MODAL - Project will be added soon -->
+<div id="projectModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-[100] p-6">
+  <div class="bg-white rounded-2xl max-w-lg w-full p-8 relative text-center">
+    <button onclick="closeProject()" class="absolute top-4 right-4 w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200">✕</button>
+    <div class="w-16 h-16 mx-auto bg-[#7a0a0a]/10 rounded-full flex items-center justify-center text-3xl">📋</div>
+    <h2 id="modalFaculty" class="mt-4 text-xl font-bold text-[#7a0a0a]">Faculty Projects</h2>
+    <div class="mt-4 bg-[#fdf6f0] border border-[#7a0a0a]/10 rounded-xl p-5">
+      <p class="text-gray-700 font-medium">Projects will be added soon</p>
+      <p class="text-sm text-gray-500 mt-2">We are collecting alumni-funded projects and scholarships for this faculty. Alumni can propose projects after ARO approval. Please check back later.</p>
+      <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
+        <div class="bg-[#7a0a0a] h-2 rounded-full" style="width:20%"></div>
+      </div>
+      <p class="text-xs text-gray-400 mt-2">This data will be managed via PHP + MySQL on Pera server</p>
+    </div>
+    <div class="mt-6 flex gap-3">
+      <button onclick="closeProject()" class="flex-1 py-2.5 border border-gray-300 rounded-full text-sm font-bold">Close</button>
+      <a href="register_faculty.html" class="flex-1 py-2.5 bg-[#7a0a0a] text-white rounded-full text-sm font-bold text-center">Register to Contribute</a>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-[#1a1a1a] text-white/80 py-10 px-6 text-sm mt-16">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row justify-between gap-6">
+      <div>
+        <div class="font-bold text-white">Alumni Relations Office</div>
+        <div class="text-white/60 mt-1">University of Peradeniya</div>
+      </div>
+      <div class="text-white/70 space-y-1 text-sm">
+        <div>Tele: <a href="tel:0812389152" class="text-white hover:underline">0812389152</a></div>
+        <div>Phone: <a href="tel:0740766469" class="text-white hover:underline">0740766469</a></div>
+        <div>WhatsApp: <a href="https://wa.me/94740766469" target="_blank" class="text-white hover:underline">0740766469</a></div>
+      </div>
+    </div>
+    <div class="mt-6 pt-6 border-t border-white/10 text-xs text-white/40 text-center">
+      © 2026 Alumni Relations Office - University of Peradeniya. All Rights Reserved.
+    </div>
+  </div>
 </footer>
+
+<script>
+function openProject(faculty){
+  document.getElementById('modalFaculty').innerText = faculty;
+  document.getElementById('projectModal').classList.remove('hidden');
+  document.getElementById('projectModal').classList.add('flex');
+}
+function closeProject(){
+  document.getElementById('projectModal').classList.add('hidden');
+  document.getElementById('projectModal').classList.remove('flex');
+}
+document.getElementById('projectModal').addEventListener('click', function(e){
+  if(e.target === this) closeProject();
+});
+</script>
 
 </body>
 </html>
